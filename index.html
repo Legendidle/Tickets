@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normilize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./bootstrap-5.2.0-dist/css/bootstrap.min.css">
+    <title>Tickets</title>
+</head>
+<body class="row">
+  <header class="tickets__header col-2 text-white">
+    <div class="tickets__logo-box d-flex align-items-center">
+      <img class="tickets__logo me-2 d-inline-bloc" src="./img/logo.png" alt="dashboard">
+      <p class="tickets__dashboard-name">
+        Dashboard Kit
+      </p>
+    </div> 
+    <nav class="tickets__nav">
+      <ul class="tickets__nav-list list-unstyled">
+        <li class="tickets__nav-item d-flex align-items-center">
+          <img class="tickets__nav-img" src="./img/overview.png" alt="overview" width="16" height="16"> 
+          <p class="tickets__nav-name">
+            Overview
+          </p>
+        </li> 
+        <li class="tickets__nav-item d-flex align-items-center">
+          <img class="tickets__nav-img" src="./img/tickets.png" alt="tickets" width="16" height="16"> 
+          <p class="tickets__nav-name">
+            Tickets
+          </p>
+        </li> 
+        <li class="tickets__nav-item d-flex align-items-center">
+          <img class="tickets__nav-img" src="./img/ideas.png" alt="ideas" width="16" height="16"> 
+          <p class="tickets__nav-name">
+            Ideas
+          </p>
+        </li> 
+        <li class="tickets__nav-item d-flex align-items-center">
+          <img class="tickets__nav-img" src="./img/contacts.png" alt="contacts" width="16" height="16"> 
+          <p class="tickets__nav-name">
+            Contacts
+          </p>
+        </li> 
+        <li class="tickets__nav-item d-flex align-items-center">
+          <img class="tickets__nav-img" src="./img/agents.png" alt="agents" width="16" height="16"> 
+          <p class="tickets__nav-name">
+            Agents
+          </p>
+        </li> 
+        <li class="tickets__nav-item d-flex align-items-center">
+          <img class="tickets__nav-img" src="./img/articles.png" alt="articles" width="16" height="16"> 
+          <p class="tickets__nav-name">
+            Articles
+          </p>
+        </li>
+      </ul>
+    </nav> 
+    <div class="tickets__settings">
+      <ul class="tickets__settings-list list-unstyled">
+        <li class="tickets__settings-item  d-flex align-items-center">
+          <img class="tickets__settings-img" src="./img/settings.png" alt="script" width="16" height="16"> 
+          <p class="tickets__settings-name">
+            Settings
+          </p>
+        </li>
+        <li class="tickets__settings-item  d-flex align-items-center">
+          <img class="tickets__settings-img" src="./img/subscription.png" alt="subscription" width="16" height="16"> 
+          <p class="tickets__settings-name">
+            Subscription
+          </p>
+        </li>
+      </ul>
+    </div>
+  </header>
+  
+  <main class="tickets__main col-10 ps-4 pe-5">
+    <div class="tickets_box">
+      <div class="main__header d-flex align-items-center justify-content-between">
+        <h1 class="tickets__title">
+          Tickets
+        </h1>
+        <div class="main__header-inner d-flex align-items-center">
+          <input class="tickets__search-input" type="text">
+          <button class="tickets__search-btn" type="button">
+            <img  src="./img/search.png" alt="search" width="16" height="16">
+          </button>
+
+          <button class="tickets__notification-btn">
+            <img src="./img/new.png" alt="new" width="16" height="16">
+          </button>
+
+          <span class="avatar-wall"></span>
+
+          <div class="avatar__box d-flex align-items-center">
+            <p class="avatar-name">
+              Jones Ferdinand
+            </p>
+
+            <img src="./img/photo.png" alt="photo" class="avatar-img" width="44" height="44">
+          </div>
+        </div>
+      </div>
+
+      <div class="main__content">
+        <div class="content__controlpanel d-flex justify-content-between align-items-center">
+          <h2 class="content__title">
+            All tickets
+          </h2>
+
+          <div class="controlpanel-box d-flex align-items-center">
+            <img class="sort-logo me-2" src="./img/sort.png" alt="sort" width="16" height="16">
+
+            <select class="tickets__sort me-5">
+              <option selected disabled>Sort</option> 
+
+              <option value="default">Default</option>
+
+              <option value="a-z">A-Z</option>
+
+              <option value="z-a">Z-A</option>
+
+            </select>
+
+            <img class="filter-logo me-2" src="./img/filter.png" alt="filter" width="16" height="16">
+
+            <select class="tickets__filter me-3">
+              <option selected disabled>Filter</option>
+
+              <option value="default">Default</option>
+
+              <option value="high">High</option>
+
+              <option value="normal">Normal</option>
+
+              <option value="low">Low</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="content__render">
+          <div class="content__render-nav d-flex align-items-center">
+            <h3 class="content__titles content__details">
+              Ticket details
+            </h3>    
+              
+            <h3 class="content__titles content__name">
+              Customer name
+            </h3>    
+
+            <h3 class="content__titles content__dates">
+              Date
+            </h3>    
+
+            <h3 class="content__titles content__priorities">
+              Priority
+            </h3>
+            
+            <h3 class="content__titles content-change-priorities">
+              Change priority
+            </h3>
+          </div>
+
+          <ul class="content__render-list list-unstyled">
+            
+              <!-- <li class="content__render-item d-flex align-items-center">
+                <img class="item-img" src="./img/5.png" alt="5" width="44" height="44">
+  
+                <p class="content-title content-detail d-flex flex-column m-0 ms-4">
+                  <span class="span span-detail">
+                    Contact Email not Linked
+                  </span>
+  
+                  Updated 1 day ago
+                </p>
+  
+                <p class="content-title content-name d-flex flex-column m-0">
+                  <span class="span span-name">
+                    Tom Cruise
+                  </span>
+  
+                  on 24.05.2019
+                </p>
+  
+                <p class="content-title content-date d-flex flex-column m-0">
+                  <span class="span span-date">
+                    May 26, 2019
+                  </span>
+  
+                  6:30 PM
+                </p>
+  
+                <p class="priority-text m-0">
+                  high
+                </p>
+              </li> -->
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <template id="template">
+    <li class="content__render-item d-flex align-items-center">
+      <img class="item-img" src="./img/5.png" alt="5" width="44" height="44">
+
+      <p class="content-title  d-flex flex-column m-0 ms-4">
+        
+        <span class="span span-detail">
+          Contact Email not Linked
+        </span>
+        <span class="content-detail">
+          Updated 1 day ago
+        </span>
+
+      </p>
+
+      <p class="content-title d-flex flex-column m-0">
+        <span class="span span-name">
+          Tom Cruise
+        </span>
+         
+        <span class="content-name">
+          on 24.05.2019
+        </span>
+        
+      </p>
+
+      <p class="content-title d-flex flex-column m-0">
+        <span class="span span-date">
+          May 26, 2019
+        </span>
+        
+        <span class="content-date">
+          6:30 PM
+        </span>
+      </p>
+      
+      <div class="box">
+        <p class="priority-text m-0 d-inline">
+          high
+        </p>
+      </div>
+
+      <div class="priority-box d-flex align-items-center">
+        
+        <button class="priority-btn">
+          <img class="change-img" src="./img/change.png" alt="change" width="24" height="24">
+        </button>
+
+        <select class="select-priority">
+          <option selected disabled class="text-secondary">Change</option>
+  
+          <option value="default" class="text-primary">Default</option>
+  
+          <option value="high" class="text-danger">High</option>
+  
+          <option value="normal" class="text-success">Normal</option>
+  
+          <option value="low" class="text-warning">Low</option>
+        </select>
+      </div>
+    </li>
+  </template>
+
+    <script src="./js/users.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./bootstrap-5.2.0-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
