@@ -215,7 +215,7 @@ body{
     width: 300px;
 }
 .box{
-    width: 34   0px;
+    width: 340px;
 }
 .content__render-item{
     padding-left: 31px;
@@ -273,6 +273,5 @@ body{
     letter-spacing: 0.5px;
     text-transform: uppercase;
     color: #FFFFFF;
-    /* background: #F12B2C; */
     border-radius: 100px;
 }
