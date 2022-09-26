@@ -47,8 +47,6 @@ function render(users) {
   
   let listFragment = document.createDocumentFragment();
 
-  // console.log(listFragment);
-
   users.forEach((user) => {
     listFragment.append(createElement(user))
   });
@@ -111,13 +109,9 @@ filter.addEventListener("change", () => {
 contentRender.addEventListener("click", (evt) => {
   if(evt.path[1].matches(".priority-btn")) {
     let selectPriority = evt.path[1].nextElementSibling
-    console.log(selectPriority);
-    // selectPriority.classList.toggle("block");
+    selectPriority.classList = "block"; 
   }
 })
-
-
-
 
 
 render(data);
