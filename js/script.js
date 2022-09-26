@@ -1,3 +1,5 @@
+//addElements
+
 let body = document.body;
 let contentRender = body.querySelector(".content__render-list");
 let template = body.querySelector("#template").content;
